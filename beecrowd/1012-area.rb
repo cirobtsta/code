@@ -35,3 +35,41 @@
 
 
 
+a = 3.0
+b = 4.0
+c = 5.2
+
+pi = 3.14159
+
+
+# a) a área do triângulo retângulo que tem A por base e C por altura.
+
+t1 = (a * c)/2
+
+# b) a área do círculo de raio C. (pi = 3.14159)
+
+c = pi * (c**2)
+
+# c) a área do trapézio que tem A e B por bases e C por altura.
+
+t2 = ((a+b)*c)/2
+
+
+# d) a área do quadrado que tem lado B.
+
+q = b * b 
+
+
+# e) a área do retângulo que tem lados A e B.
+
+r = a * b
+
+
+puts t1
+puts c 
+puts t2
+puts q
+puts r
+
+
+
