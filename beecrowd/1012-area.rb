@@ -22,7 +22,7 @@
 # TRIANGULO: 7.800
 # CIRCULO: 84.949
 # TRAPEZIO: 18.200
-# QUADRADO: 16.000
+# QUADRADO: 16.000S
 # RETANGULO: 12.000
 
 # 12.7 10.4 15.2
@@ -35,41 +35,28 @@
 
 
 
-a = 3.0
-b = 4.0
-c = 5.2
+# a = 3.0
+# b = 4.0
+# c = 5.2
 
+
+
+a, b, c = gets.split.map(&:to_f).map { |num| num.round(3)}
 pi = 3.14159
 
-
-# a) a área do triângulo retângulo que tem A por base e C por altura.
-
-t1 = (a * c)/2
-
-# b) a área do círculo de raio C. (pi = 3.14159)
-
-c = pi * (c**2)
-
-# c) a área do trapézio que tem A e B por bases e C por altura.
-
-t2 = ((a+b)*c)/2
-
-
-# d) a área do quadrado que tem lado B.
-
+t1 = (a * c) / 2
+circle = pi * (c**2)
+t2 = ((a + b) * c) / 2
 q = b * b 
-
-
-# e) a área do retângulo que tem lados A e B.
-
 r = a * b
 
-
-puts t1
-puts c 
-puts t2
-puts q
-puts r
-
+print format("TRIANGULO: %.3f\n", t1)
+print format("CIRCULO: %.3f\n", circle)
+print format("TRAPEZIO: %.3f\n", t2)
+print format("QUADRADO: %.3f\n", q)
+print format("RETANGULO: %.3f\n", r)
 
 
+# puts "a = #{a}"
+# puts "b = #{b}"
+# puts "c = #{c}"
